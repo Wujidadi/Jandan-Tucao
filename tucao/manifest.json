@@ -1,0 +1,25 @@
+{
+  "name": "无聊图吐槽",
+  "version": "1.0.2",
+  "manifest_version": 2,
+  "description": "评论插件，by yellow",
+  "icons": {
+    "16": "icon.png",
+    "48": "icon.png",
+    "128": "icon.png"
+  },
+  "content_scripts": [
+    {
+      "js": [
+        "tucao.js"
+      ],
+      "matches": [
+        "http://*.jandan.net/*",
+        "http://jandan.net/*",
+        "https://*.jandan.net/*",
+        "https://jandan.net/*"
+      ],
+      "run_at": "document_end"
+    }
+  ]
+}
